@@ -1,0 +1,12 @@
+<div class="cc_text-header <?= $this->class ?>" style="background-image:url(<?= $this->singleSRC ?> )">
+	<div class="cc_text-header-content">
+		<<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
+		<?= $this->text ?>
+		
+		<?php if ($this->imageUrl != ''): ?>
+			<a href="<?= $this->imageUrl ?>" <?= $this->attributes ?> ><?php if ($this->linkTitle != '') echo $this->linkTitle; else echo "Mehr erfahren"; ?> →</a>
+			
+			
+		<?php endif ?>
+	</div>
+</div>

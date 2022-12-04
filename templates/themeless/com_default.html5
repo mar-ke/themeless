@@ -1,0 +1,15 @@
+
+<div class="comment_default<?= $this->class ?>" id="<?= $this->id ?>">
+  <p class="info"><span class="commentName"><?= $this->name ?></span> <span class="commentTime"><time datetime="<?= $this->datetime ?>" class="date"><?= date("d.m.Y",strtotime($this->date)) ?></time></span></p>
+  <div class="comment">
+    <?= $this->comment ?>
+  </div>
+  <?php if ($this->addReply): ?>
+    <div class="reply">
+      <p class="info"><span class="commentName"><?= $this->author->name ?></span></p>
+      <div class="comment">
+        <?= $this->reply ?>
+      </div>
+    </div>
+  <?php endif; ?>
+</div>

@@ -1,0 +1,238 @@
+/* li */
+
+.listCheck ol, .listCheck ul {
+  list-style-type: none;
+  margin-left: 0 !important;
+  font-size: 1.125rem
+}
+.listCheck li::before {
+  content: "✔ ";
+  color: var(--main-color);
+  padding-right: 10px
+}
+
+/* BUTTONS */
+
+.btn a, a.btn {
+  background-color: var(--main-color);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 3px;
+  margin-top: 10px;
+  min-width: 120px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none !important;
+  transition-duration: .3s;
+}
+div.btn {
+  display: inline-block
+}
+.btnWhite a, a.btnWhite {
+  background-color: white;
+  color: var(--main-color)
+}
+.btnGray a, a.btnGray {
+  background-color: #eee;
+  color: gray
+}
+.btnSecond a, a.btnSecond {
+  background-color: var(--second-color);
+  color: white;
+}
+
+/* COMMENTS */
+.commentSection label {
+  font-size: .8em;
+  color: var(--darkergray);
+  margin: 15px 0px 5px 0px;
+  display: block;
+}
+input[type="checkbox"] {
+  width: auto !important;
+  float: left;
+}
+.checkbox_container label {
+  margin: unset;
+}
+.checkbox_container {
+  border: unset;
+  padding: unset;
+  margin: 15px 0px;
+  width: 100%;
+}
+.commentName {
+  font-weight: bold;
+}
+.commentTime {
+  float: right;
+}
+.comment {
+  margin-bottom: 15px;
+}
+.reply {
+  padding: 25px;
+  background-color: #eee;
+}
+.comment_default:not(.last) {
+  margin: 25px 0px;
+  border-bottom: 1px solid #eee;
+}
+.commentSection input, .commentSection textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: .9em
+}
+
+/**/
+
+.verticalAlignCenter {
+  display: grid;
+  place-content: center
+} 
+
+/* CONTACT-BUTTONS */
+.contactButton:hover {
+  margin-bottom: 0px;
+  transform: translateY(-10px);
+  transition-duration: .3s;
+  margin-top: 30px;
+  background-color: var(--main-color);
+  color: white;
+  text-decoration: none !important;
+}
+.contactButton {
+  background-color: rgba(100, 100, 100, .7);
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-content: center;
+  border-radius: 100px;
+  font-size: 25px;
+  color: white;
+  margin-bottom: -10px;
+  transition-duration: .3s;
+}
+.contactButtonWrapper {
+  position: fixed;
+  right: 20px;
+  bottom: 110px;
+  z-index: 10000
+}
+
+/* NEWS */
+
+.newsRoundEdges {
+  padding: 5px 5px 15px 5px;
+}
+
+.infoTime {
+	text-align: right;
+}
+
+.newsContent {
+	padding: 0px 10px;
+}
+
+.newsContent .newsHeadline a {
+	color: var(--font-color);
+	font-weight: bold;
+}
+
+/* ANIMATIONS */
+
+.hoveranimation:hover {
+  box-shadow: 3px 3px 10px rgba(100, 100, 100, .2);
+  transform: translateY(-8px);
+  transition-duration: .3s;
+  opacity: .95
+}
+.hoveranimation {
+  transition-duration: .3s
+}
+
+/* ACCORDION */
+
+.ce_accordion {
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius-xs);
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+.ui-accordion-header-active {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.ui-accordion-header .ui-accordion-header-icon:after {
+    content: '▸';
+}
+
+.ui-accordion-header-active .ui-accordion-header-icon:after {
+    content: '▾';
+}
+
+/* (IMAGE-)BORDER-RADIUS */
+.imageBorderRadiusXS img {
+  border-radius: var(--border-radius-xs)
+}
+.imageBorderRadiusS img {
+  border-radius: var(--border-radius-s)
+}
+.imageBorderRadiusM img {
+  border-radius: var(--border-radius-m)
+}
+.imageBorderRadiusL img {
+  border-radius: var(--border-radius-l)
+}
+.imageBorderRadiusXL img {
+  border-radius: var(--border-radius-xl)
+}
+.borderRadiusXS {
+  border-radius: var(--border-radius-xs)
+}
+.borderRadiusS {
+  border-radius: var(--border-radius-s)
+}
+.borderRadiusM {
+  border-radius: var(--border-radius-m)
+}
+.borderRadiusL {
+  border-radius: var(--border-radius-l)
+}
+.borderRadiusXL {
+  border-radius: var(--border-radius-xl)
+}
+
+/* IMAGE COLOR */
+.grayImg img:hover {
+  filter: grayscale(0%) !important
+}
+.grayImg img {
+  filter: grayscale(100%)
+}
+
+/* BACKGROUND */
+.bgWhite {
+  background-color: white !important;
+}
+.bgLightgray {
+  background-color: #ececec !important;
+}
+.bgGray {
+  background-color: #aaa !important;
+}
+.bgDarkgray {
+  background-color: gray !important;
+}
+.bgBlack {
+  background-color: black !important;
+}
+.bgMain, .bgAccent {
+  background-color: var(--main-color) !important;
+}
+.bgSecond {
+  background-color: var(--second-color) !important;
+}

@@ -1,0 +1,274 @@
+/* CWE-Framework.css */
+.cc_intro {
+  color: var(--gray);
+  font-size: 1.3rem
+} /* Animierte Quadrate */ {}
+.cc_qua-t-l:hover::before {
+  transform: translate(-75%, -75%);
+  transition-duration: .3s;
+}
+.cc_qua-t-l::before {
+  content: ' ';
+  width: 50px;
+  height: 50px;
+  background-color: var(--main-color);
+  display: block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition-duration: .3s
+}
+.cc_place-content-center {
+  place-content: center
+}
+.cc_info-kachel {
+  max-width: 1000px;
+  margin: auto;
+  padding: 70px;
+  border-radius: 100px;
+  box-shadow: 10px 10px 60px rgba(100, 100, 100, .5)
+} /*** CENTER ****/ {}
+.cc_center {
+  margin: auto !important
+} /*** MAX SIZES ***/ {}
+.cc_max-container {
+  max-width: var(--container-size);
+  margin: auto;
+}
+.cc_max-750 {
+  max-width: 750px;
+}
+.cc_max-700 {
+  max-width: 700px
+}
+.cc_text-center {
+  text-align: center !important
+}
+.cc_not-allowed {
+  cursor: not-allowed
+} 
+
+ /* Einzelgrid */ {}
+.cc_einzelgridUmschlag {
+  display: grid !important;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px
+} /* GRID */ {}
+.cc_contentCentert, .cc_contentCentert > div {
+  display: grid !important;
+  place-content: center;
+}
+.cc_markeGrid {
+  display: grid !important;
+  gap: 30px
+} /*** Portfolio ***/ {}
+@media (min-width:800px) {
+  .cc_news-portfolio-content {
+    background-color: white;
+    width: 130%;
+    margin-left: -30%;
+    height: min-content;
+    padding: 20px;
+  }
+  .cc_news-portfolio-content-container {
+    position: relative;
+    top: 40px;
+  }
+  .cc_news-portfolio-readmore {
+    margin-left: -30px;
+    background-color: var(--main-color);
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  .cc_news-portfolio-readmore a {
+    color: white;
+  }
+}
+.cc_portfolio .info, .cc_portfolio h2 {
+  margin: 0px !important
+}
+.cc_two-column p, p.cc_two-column {
+  columns: 2;
+  text-align: justify;
+}
+.cc_three-column p, p.cc_three-column {
+  columns: 3;
+  text-align: justify
+}
+.cc_download-dark a {
+  padding: 15px 20px;
+  background: #313131;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  border-radius: 10px
+}
+li.cc_list-inline, .cc_list-inline li {
+  display: inline-block
+}
+.cc_hoveranimation:hover {
+  box-shadow: 3px 3px 10px rgba(100, 100, 100, .2);
+  transform: translateY(-8px);
+  transition-duration: .3s;
+  opacity: .95
+}
+.cc_hoveranimation {
+  transition-duration: .3s
+}
+.cc_btn a, a.cc_btn {
+  background-color: var(--main-color);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 3px;
+  margin-top: 10px;
+  min-width: 120px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none !important;
+  transition-duration: .3s
+}
+div.cc_btn {
+  display: inline-block
+}
+.cc_btn-white a, a.cc_btn-white {
+  background-color: white;
+  color: var(--main-color)
+}
+.cc_btn-gray a, a.cc_btn-gray {
+  background-color: #eee;
+  color: gray
+}
+.cc_btn-second a, a.cc_btn-second {
+  background-color: var(--second-color);
+  color: white)
+}
+.cc_list-menu-dark a {
+  color: white !important;
+  text-decoration: none !important
+}
+.cc_list-menu-dark li:hover {
+  background: #282828;
+  border-left: var(--main-color)1px solid;
+  padding: 5px 0px 5px 14px
+}
+.cc_list-menu-dark li {
+  padding: 5px 0px 5px 15px;
+  border-bottom: 1px solid #2f2f2f;
+  color: white
+} 
+.cc_list-check ol, .cc_list-check ul, .cc_list-menu-dark ul, .cc_list-edit {
+  list-style-type: none;
+  margin-left: 0 !important;
+  font-size: 1.125rem
+}
+.cc_list-check li::before {
+  content: "✔ ";
+  color: var(--main-color);
+  padding-right: 10px
+}
+.cc_list-edit ul, ul.cc_list-edit {
+  list-style-type: none !important;
+  text-decoration: none !important;
+  margin-left: 0px !important
+}
+.hashtag {
+  background-color: #2dd7a8;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+  cursor: help
+}
+.cc_headline-brush {
+  background-image: url(https://www.contao-website-erstellen.de/files/cwe/assets/brush-accent.svg);
+  background-repeat: no-repeat;
+  padding: 3%;
+  color: white;
+  rotate: -2deg;
+  margin-bottom: 4%;
+  margin-top: -3%;
+}
+.cc_headline-brush-second {
+  background-image: url(https://www.contao-website-erstellen.de/files/cwe/assets/brush-second.svg);
+  background-repeat: no-repeat;
+  padding: 3%;
+  color: white;
+  rotate: -2deg;
+  margin-bottom: 4%;
+  margin-top: -3%
+}
+.cc_polaroid_right {
+  border: 10px solid white;
+  box-shadow: lightgray 5px 5px 10px;
+  rotate: 3deg;
+  transition: 0.20s;
+}
+.cc_polaroid_right:hover {
+  rotate: -1deg;
+  transition: 0.20s;
+}
+.cc_polaroid_left {
+  border: 10px solid white;
+  box-shadow: lightgray 5px 5px 10px;
+  rotate: -2deg;
+  transition: 0.20s;
+}
+.cc_polaroid_left:hover {
+  rotate: 1deg;
+  transition: 0.20s
+}
+.cc_gray-img img:hover {
+  filter: grayscale(0%) !important
+}
+.cc_gray-img img {
+  filter: grayscale(100%)
+}
+.cc_icon:hover {
+  transition: 0.20s;
+  scale: 1.2;
+  text-shadow: 2px 2px 5px rgba(100, 100, 100, 0.6)
+}
+.cc_icon {
+  font-size: 50px;
+  transition: 0.2s
+}
+.cc_news-v2 {
+  height: 40vw;
+  max-height: 550px;
+  position: relative;
+  min-height: 350px;
+}
+.cc_newsinfo {
+  position: absolute;
+  bottom: 0px;
+  padding: 15px;
+  background: linear-gradient(0deg, #000, rgba(0, 0, 0, .496236) 60%, rgba(0, 0, 0, .104079) 90%, transparent);
+  color: white;
+}
+.cc_newsinfo a:hover {
+  color: var(--main-color) !important;
+}
+.cc_newsinfo a p {
+  color: white !important;
+}
+div.cc_news-v2 {
+  background-size: cover !important;
+  background-position: center !important;
+}
+.cc_newsinfo h3, .cc_newsinfo p {
+  margin-bottom: 0px !important;
+}
+body .bg-orientation-right {
+  background-position: center right !important
+}
+ 
+
+
+
+/* Farben */ {}
+:root {
+  --lightgray: #eee;
+  --gray: #aaa;
+  --darkgray: #666;
+  --darkergray: #333;
+  --width-smartphone: 800px
+}

@@ -1,0 +1,139 @@
+/* custom.css */
+
+.lineThrough {
+  text-decoration: line-through
+}  
+
+/* General Settings */ {}
+.float_left {
+  margin: 0px 15px 0px 0px;
+  float: left;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+  height: fit-content;
+}
+figure {
+  margin: unset;
+}
+ /* mar_ke GRID */ {}
+.cc_markeGrid {
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1200px;
+  margin: auto
+} /* ANIMATIONEN */ {}
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+} /* Header */ {}
+.cc_header {
+  position: relative;
+  width: 100%;
+  height: var(--header-height);
+  overflow: hidden;
+  display: grid;
+}
+.cc_headerSmall {
+  height: var(--header-heightSmall);
+}
+.cc_header figure {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.cc_header figure:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cc_header > :not(figure:first-child) {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+.cc_header.cc_headerColored figure:first-child::before {
+  content: '';
+  background-color: var(--header-color);
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  opacity: var(--header-opacity);
+}
+.cc_text-header {
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  place-content: center left;
+  display: flex;
+  color: white;
+}
+.cc_text-header-content {
+  width: 100%;
+  margin: auto;
+  max-width: 1200px;
+}
+.cc_text-header-content a {
+  margin-top: 15px;
+  display: block;
+}
+.cc_text-header h1, .cc_text-header h2, .cc_text-header h3, .cc_text-header h4, .cc_text-header h5, .cc_text-header h6 {
+  margin: unset !important;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
+  font-size: 3rem
+} /*** HYPERLINKS ***/ {}
+a:hover {
+  color: var(--second-color);
+}
+a {
+  text-decoration: none;
+  color: var(--main-color)
+} /*** ARTICLE ***/ {}
+.mod_article {
+  padding: 50px 25px
+} /*** # HEADER # ***/ {}
+ /*** # VARIABLES # ***/ {}
+ /*** # FOOTER # ***/ {}
+ /* Headlines */ {}
+
+#container .mod_article:not(.cc_fullwidth):not(.cc_fullwidth-content), .mod_navigation ul {
+  max-width: 1200px;
+  margin: auto
+}
+
+.bg-header {
+  background-image: linear-gradient(90deg, var(--main-color), var(--second-color))
+}
+
+
+.slider-control {
+  display: none
+}
+.border-top-lightgray {
+  border-top: 1px solid lightgray
+} /*** FONTS ***/ {} /* akshar-300 - latin */ @font-face {
+  font-family: 'Akshar';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../../../demo/fonts/akshar/akshar-v1-latin-300.eot'); /* IE9 Compat Modes */ src: local(''), url('../../../demo/fonts/akshar/akshar-v1-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../../../demo/fonts/akshar/akshar-v1-latin-300.woff2') format('woff2'), /* Super Modern Browsers */ url('../../../demo/fonts/akshar/akshar-v1-latin-300.woff') format('woff'), /* Modern Browsers */ url('../../../demo/fonts/akshar/akshar-v1-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */ url('../../../demo/fonts/akshar/akshar-v1-latin-300.svg#Akshar') format('svg'); /* Legacy iOS */
+} /* akshar-regular - latin */ @font-face {
+  font-family: 'Akshar';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../../demo/fonts/akshar/akshar-v1-latin-regular.eot'); /* IE9 Compat Modes */ src: local(''), url('../../../demo/fonts/akshar/akshar-v1-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../../../demo/fonts/akshar/akshar-v1-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../../../demo/fonts/akshar/akshar-v1-latin-regular.woff') format('woff'), /* Modern Browsers */ url('../../../demo/fonts/akshar/akshar-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../../../demo/fonts/akshar/akshar-v1-latin-regular.svg#Akshar') format('svg'); /* Legacy iOS */
+} /* akshar-700 - latin */ @font-face {
+  font-family: 'Akshar';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../../demo/fonts/akshar/akshar-v1-latin-700.eot'); /* IE9 Compat Modes */ src: local(''), url('../../../demo/fonts/akshar/akshar-v1-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../../../demo/fonts/akshar/akshar-v1-latin-700.woff2') format('woff2'), /* Super Modern Browsers */ url('../../../demo/fonts/akshar/akshar-v1-latin-700.woff') format('woff'), /* Modern Browsers */ url('../../../demo/fonts/akshar/akshar-v1-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */ url('../../../demo/fonts/akshar/akshar-v1-latin-700.svg#Akshar') format('svg'); /* Legacy iOS */
+}

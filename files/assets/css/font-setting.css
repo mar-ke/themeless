@@ -1,0 +1,81 @@
+h1, h2, h3, h4, h5, h6, .mod_navigation {
+  font-family: Akshar;
+}
+h1 {
+  margin-top: 0px
+}
+body, p, li, ul {
+  font-family: Akshar;
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 300
+} 
+
+p + p {
+  margin-top: 10px
+}
+
+.lineThrough {
+  text-decoration: line-through
+} 
+
+.textTwoColumn p, p.textTwoColumn {
+  columns: 2;
+  text-align: justify;
+}
+.textThreeColumn p, p.textThreeColumn {
+  columns: 3;
+  text-align: justify
+}
+.textFourColumn p, p.textFourColumn {
+  columns: 4;
+  text-align: justify
+}
+
+/* FONT COLOR */
+
+.colorWhite, .colorWhite a, a.colorWhite {
+  color: white !important;
+}
+.colorLightgray, .colorLightgray a, a.colorLightgray {
+  color: #ececec !important;
+}
+.colorGray, .colorGray a, a.colorGray {
+  color: #aaa !important
+}
+.colorDarkGray, .colorDarkGray a, a.colorDarkGray {
+  color: gray !important;
+}
+.colorBlack, .colorBlack a, a.colorBlack {
+  color: black !important;
+}
+.colorMain, .colorMain a, a.colorMain,
+.colorAccent, .colorAccent a, a.colorAccent {
+  color: var(--main-color) !important;
+}
+.colorSecond, .colorSecond a, a.colorSecond {
+  color: var(--second-color) !important;
+}
+
+/* FONT SIZE */
+
+.fontSizeS p, .fontSizeS {
+  font-size: .8rem !important
+}
+.fontSizeM p, .fontSizeM {
+  font-size: 1.5rem !important;
+}
+.fontSizeL p, .fontSizeL {
+  font-size: 2rem !important;
+}
+.fontSizeXL p, .fontSizeXL {
+  font-size: 2.5rem !important;
+}
+.fontSizeXXL p, .fontSizeXXL {
+  font-size: 4rem !important;
+}
+.fontSizeXXXL p, .fontSizeXXXL {
+  font-size: 6rem !important;
+}
+
+
