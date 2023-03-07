@@ -23,11 +23,11 @@
   .main-menu ul.level_2 {
     display: none;
     position: fixed;
-    background-color: var(--menu-background);
+    background-color: $menu-background;
     padding: 20px;
     margin-top: 20px;
     max-width: 300px;
-    border-bottom: 5px solid var(--main-color);
+    border-bottom: 5px solid $main-color;
   }
   .main-menu li:hover ul.level_2 {
     display: block !important;
@@ -47,7 +47,7 @@
   }
   .main-menu a {
     text-decoration: none;
-    color: var(--main-color);
+    color: $main-color;
   }
   .main-menu ul.level_2 li:not(.last) {
     border-bottom: 1px solid rgba(100, 100, 100, .2);
@@ -59,7 +59,7 @@
     display: block;
     position: absolute;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid var(--menu-background);
+    border-bottom: 10px solid $menu-background;
     border-left: 10px solid transparent;
     top: -10px;
   }
@@ -80,7 +80,8 @@
   .main-menu, .menu-list {
     display: none;
   }
-} /*** Smart Menü ***/ {}
+} 
+/*** Smart Menü ***/
 .sm_hidden {
   visibility: hidden;
   position: absolute;
@@ -108,7 +109,7 @@
   padding-top: 10px;
 }
 #trigger {
-  filter: invert(var(--smartmenu-trigger-brightness));
+  filter: invert($smartmenu-trigger-brightness);
 }
 .mobile-menu label {
   color: white;
@@ -135,7 +136,7 @@
   text-align: center;
 }
 .mobile-menu {
-  background-color: var(--smartmenu-background);
+  background-color: $smartmenu-background;
   position: fixed;
   bottom: 0px;
   z-index: 99999;

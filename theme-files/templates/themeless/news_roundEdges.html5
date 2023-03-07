@@ -1,5 +1,5 @@
 
-<div class="layout_latest newsRoundEdges bgWhite borderRadiusM arc_<?= $this->archive->id ?> block<?= $this->class ?>" itemscope itemtype="http://schema.org/Article">
+<div class="layout_latest newsRoundEdges hoveranimation bgWhite borderRadiusM arc_<?= $this->archive->id ?> block<?= $this->class ?>" itemscope itemtype="http://schema.org/Article">
 
 
 

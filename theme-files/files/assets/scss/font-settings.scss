@@ -1,14 +1,17 @@
 h1, h2, h3, h4, h5, h6, .mod_navigation {
   font-family: Akshar;
+
 }
 h1 {
-  margin-top: 0px
+  margin-top: 0px;
+  color: $header-color;
 }
 body, p, li, ul {
   font-family: Akshar;
   font-size: 18px;
   margin: 0px;
-  font-weight: 300
+  font-weight: 300;
+  color: $font-color;
 } 
 
 p + p {
@@ -34,27 +37,27 @@ p + p {
 
 /* FONT COLOR */
 
-.colorWhite, .colorWhite a, a.colorWhite {
+.colorWhite p, .colorWhite, .colorWhite a, a.colorWhite {
   color: white !important;
 }
-.colorLightgray, .colorLightgray a, a.colorLightgray {
+.colorLightgray p, .colorLightgray, .colorLightgray a, a.colorLightgray {
   color: #ececec !important;
 }
-.colorGray, .colorGray a, a.colorGray {
+.colorGray p, .colorGray, .colorGray a, a.colorGray {
   color: #aaa !important
 }
-.colorDarkGray, .colorDarkGray a, a.colorDarkGray {
+.colorDarkgray p, .colorDarkgray, .colorDarkgray a, a.colorDarkgray {
   color: gray !important;
 }
-.colorBlack, .colorBlack a, a.colorBlack {
+.colorBlack p, .colorBlack, .colorBlack a, a.colorBlack {
   color: black !important;
 }
-.colorMain, .colorMain a, a.colorMain,
-.colorAccent, .colorAccent a, a.colorAccent {
-  color: var(--main-color) !important;
+.colorMain p, .colorMain, .colorMain a, a.colorMain,
+.colorAccent p, .colorAccent, .colorAccent a, a.colorAccent {
+  color: $main-color !important;
 }
-.colorSecond, .colorSecond a, a.colorSecond {
-  color: var(--second-color) !important;
+.colorSecond p, .colorSecond, .colorSecond a, a.colorSecond {
+  color: $second-color !important;
 }
 
 /* FONT SIZE */
@@ -78,4 +81,35 @@ p + p {
   font-size: 6rem !important;
 }
 
+/* LINE HEIGHT */
 
+.lineHeightXXS {
+	line-height: .9em;
+}
+.lineHeightXS {
+	line-height: 1em;
+}
+.lineHeightS {
+	line-height: 1.1em;
+}
+.lineHeightL {
+	line-height: 1.3em;
+}
+.lineHeightXL {
+	line-height: 1.4em;
+}
+.lineHeightXXL {
+	line-height: 1.5em;
+}
+
+
+/* HYPERLINKS */
+
+a {
+  text-decoration: none;
+  color: $main-color;
+} 
+
+a:hover {
+  color: $second-color;
+}
