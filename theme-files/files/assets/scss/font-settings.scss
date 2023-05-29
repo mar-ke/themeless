@@ -1,84 +1,82 @@
-h1, h2, h3, h4, h5, h6, .mod_navigation {
-  font-family: Akshar;
-
+* {
+	font-family: Akshar, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 h1 {
-  margin-top: 0px;
-  color: $header-color;
+	margin-top: 0px;
+	color: $main-color;
 }
 body, p, li, ul {
-  font-family: Akshar;
-  font-size: 18px;
-  margin: 0px;
-  font-weight: 300;
-  color: $font-color;
+	font-size: 18px;
+	margin: 0px;
+	font-weight: 300;
+	color: $font-color;
 } 
 
 p + p {
-  margin-top: 10px
+	margin-top: 10px
 }
 
 .lineThrough {
-  text-decoration: line-through
+	text-decoration: line-through
 } 
 
 .textTwoColumn p, p.textTwoColumn {
-  columns: 2;
-  text-align: justify;
+	columns: 2;
+	text-align: justify;
 }
 .textThreeColumn p, p.textThreeColumn {
-  columns: 3;
-  text-align: justify
+	columns: 3;
+	text-align: justify
 }
 .textFourColumn p, p.textFourColumn {
-  columns: 4;
-  text-align: justify
+	columns: 4;
+	text-align: justify
 }
 
 /* FONT COLOR */
 
 .colorWhite p, .colorWhite, .colorWhite a, a.colorWhite {
-  color: white !important;
+	color: white !important;
 }
 .colorLightgray p, .colorLightgray, .colorLightgray a, a.colorLightgray {
-  color: #ececec !important;
+	color: #ececec !important;
 }
 .colorGray p, .colorGray, .colorGray a, a.colorGray {
-  color: #aaa !important
+	color: #aaa !important
 }
 .colorDarkgray p, .colorDarkgray, .colorDarkgray a, a.colorDarkgray {
-  color: gray !important;
+	color: gray !important;
 }
 .colorBlack p, .colorBlack, .colorBlack a, a.colorBlack {
-  color: black !important;
+	color: black !important;
 }
 .colorMain p, .colorMain, .colorMain a, a.colorMain,
 .colorAccent p, .colorAccent, .colorAccent a, a.colorAccent {
-  color: $main-color !important;
+	color: $main-color !important;
 }
 .colorSecond p, .colorSecond, .colorSecond a, a.colorSecond {
-  color: $second-color !important;
+	color: $second-color !important;
 }
 
 /* FONT SIZE */
 
 .fontSizeS p, .fontSizeS {
-  font-size: .8rem !important
+	font-size: .8rem !important
 }
 .fontSizeM p, .fontSizeM {
-  font-size: 1.5rem !important;
+	font-size: 1.5rem !important;
 }
 .fontSizeL p, .fontSizeL {
-  font-size: 2rem !important;
+	font-size: 2rem !important;
 }
 .fontSizeXL p, .fontSizeXL {
-  font-size: 2.5rem !important;
+	font-size: 2.5rem !important;
 }
 .fontSizeXXL p, .fontSizeXXL {
-  font-size: 4rem !important;
+	font-size: 4rem !important;
 }
 .fontSizeXXXL p, .fontSizeXXXL {
-  font-size: 6rem !important;
+	font-size: 6rem !important;
 }
 
 /* LINE HEIGHT */
@@ -106,10 +104,15 @@ p + p {
 /* HYPERLINKS */
 
 a {
-  text-decoration: none;
-  color: $main-color;
+	text-decoration: none;
+	color: $main-color;
 } 
 
 a:hover {
-  color: $second-color;
+	color: $second-color;
+}
+
+/* TEXT ALIGN */
+.textAlignCenter {
+	text-align: center
 }

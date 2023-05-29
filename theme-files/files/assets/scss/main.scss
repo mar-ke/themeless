@@ -31,6 +31,6 @@ figure {
 }
 
 #container .mod_article:not(.fullWidth):not(.fullWidthContent), .mod_navigation ul {
-  max-width: 1200px;
+  max-width: $container-size;
   margin: auto
 }
