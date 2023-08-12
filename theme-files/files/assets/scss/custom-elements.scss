@@ -272,9 +272,11 @@ td {
 /* IMAGE COLOR */
 .grayImg img:hover {
   filter: grayscale(0%) !important
+  transition-duration:.3s;
 }
 .grayImg img {
   filter: grayscale(100%)
+  transition-duration:.3s;
 }
 
 /* BACKGROUND */

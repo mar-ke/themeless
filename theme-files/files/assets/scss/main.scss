@@ -1,41 +1,45 @@
 /* SIZE */
 
 .maxWidthContainerSize {
-  max-width: $container-size;
-  margin: auto!important;
+	max-width: $container-size;
+	margin: auto!important;
+	margin-left: auto!important;
+	margin-right: auto!important;
+	padding: 50px 25px;
 }
 
 .maxWidth750 {
-  max-width: 750px;
+	max-width: 750px;
 }
 .maxWidth700 {
-  max-width: 700px
+	max-width: 700px
 }
 
 /* IMAGES */
 
 img {
-  max-width: 100%;
-  object-fit: contain;
-  height: fit-content;
+	max-width: 100%;
+	object-fit: contain;
+	height: fit-content;
 }
 
 figure {
-  margin: unset;
+	margin: unset;
 }
 
 /* ARTICLE */
 
-.mod_article {
-  padding: 50px 25px
+.mod_article:not(.fullWidth):not(.fullWidthContent) {
+	padding: 50px 25px
 }
 
 #container .mod_article:not(.fullWidth):not(.fullWidthContent), .mod_navigation ul {
-  max-width: $container-size;
-  margin: auto
+	max-width: $container-size;
+	margin: auto
 }
 
-/* OTHER SETTINGS */
-* {
+/* Other Settings */
+
+* { 
 	box-sizing: border-box;
 }

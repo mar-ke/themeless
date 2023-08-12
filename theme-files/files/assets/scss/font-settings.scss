@@ -1,16 +1,42 @@
 html, body {
 	font-family: Akshar, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-}
-h1 {
-	margin-top: 0px;
-	color: $main-color;
-}
-body, p, li, ul {
 	font-size: 18px;
 	margin: 0px;
 	font-weight: 300;
 	color: $font-color;
-} 
+}
+h1, .h1 {
+	margin-top: 0px;
+	color: $h1-color;
+	font-size:$h1-size;
+	line-height: 1.25;
+}
+
+h2, .h2 {
+	color: $h2-color;
+	font-size: $h2-size;
+}
+
+h3, .h3 {
+	color: $h3-color;
+	font-size: $h3-size;
+}
+
+h4, .h4 {
+	color: $h4-color;
+	font-size: $h4-size;
+}
+
+h5, .h5 {
+	color: $h5-color;
+	font-size: $h5-size;
+}
+
+h6, .h6 {
+	color: $h6-color;
+	font-size: $h6-size;
+}
+
 
 p + p {
 	margin-top: 10px
@@ -115,4 +141,8 @@ a:hover {
 /* TEXT ALIGN */
 .textAlignCenter {
 	text-align: center
+}
+
+.uppercase {
+	text-transform: uppercase;
 }
