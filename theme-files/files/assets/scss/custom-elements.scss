@@ -284,13 +284,13 @@ td {
   background-color: white !important;
 }
 .bgLightgray {
-  background-color: #ececec !important;
+  background-color: $lightgray-color !important;
 }
 .bgGray {
   background-color: #aaa !important;
 }
 .bgDarkgray {
-  background-color: gray !important;
+  background-color: $darkergray !important;
 }
 .bgBlack {
   background-color: black !important;
@@ -308,13 +308,13 @@ td {
   border: 1px solid white !important;
 }
 .borderLightgray {
-  border: 1px solid #ececec !important;
+  border: 1px solid $lightgray-color !important;
 }
 .borderGray {
   border: 1px solid #aaa !important
 }
 .borderDarkgray {
-  border: 1px solid gray !important;
+  border: 1px solid $darkergray !important;
 }
 .borderBlack {
   border: 1px solid black !important;

@@ -65,13 +65,13 @@ p + p {
 	color: white !important;
 }
 .colorLightgray p, .colorLightgray, .colorLightgray a, a.colorLightgray {
-	color: #ececec !important;
+	color: $lightgray-color !important;
 }
 .colorGray p, .colorGray, .colorGray a, a.colorGray {
 	color: #aaa !important
 }
 .colorDarkgray p, .colorDarkgray, .colorDarkgray a, a.colorDarkgray {
-	color: gray !important;
+	color: $darkergray !important;
 }
 .colorBlack p, .colorBlack, .colorBlack a, a.colorBlack {
 	color: black !important;
