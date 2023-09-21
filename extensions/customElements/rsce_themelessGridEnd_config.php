@@ -5,7 +5,8 @@ return array(
 		'Grid-Wrapper [Ende]',
 		'',
 	),
-	'types' => array('content', 'module'),
+    'types' => array('content'),
+    'contentCategory' => 'themeless',
 	'wrapper' => array(
 		'type' => 'stop',
 	),

@@ -5,7 +5,8 @@ return array(
 		'Grid-Wrapper [ANFANG]',
 		'',
 	),
-	'types' => array('content', 'module'),
+    'types' => array('content'),
+    'contentCategory' => 'themeless',
 	'standardFields' => array('cssID', 'space'),
 	'wrapper' => array(
 		'type' => 'start',
