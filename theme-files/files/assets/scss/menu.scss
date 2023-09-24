@@ -22,7 +22,7 @@
   }
   .main-menu ul.level_2 {
     display: none;
-    position: fixed;
+    position: absolute;
     background-color: $menu-background;
     padding: 20px;
     margin-top: 20px;
