@@ -8,6 +8,13 @@
 	display: grid;
 	align-content: center;
 }
+
+@media screen and (max-width:$width-smartphone) {
+	.cc_header {
+		height: $header-heightSmall;
+	}
+}
+
 .cc_headerSmall {
 	height: $header-heightSmall;
 }
