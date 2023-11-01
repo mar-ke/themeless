@@ -108,6 +108,9 @@
   margin-left: -15px;
   padding-top: 10px;
 }
+#smart_menu a {
+transition-duration: 0s !important;
+}
 #trigger {
   filter: invert($smartmenu-trigger-brightness);
 }
