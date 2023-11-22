@@ -1,8 +1,10 @@
 <?php
 
-if ( $this->singleSRC )
-	$file = \FilesModel::findByUuid($this->singleSRC);
+use Contao\FilesModel; 
 
+if ( $this->singleSRC )
+	$file = FilesModel::findByUuid($this->singleSRC);
+	
 ?>
 
 

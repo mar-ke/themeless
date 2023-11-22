@@ -6,6 +6,20 @@
 	margin-bottom: $grid-gap;	
 }
 
+// PLACE THE GRID CONTENT
+
+.gridPlaceContent_center > * {
+	display: grid;
+	align-content: center;
+	justify-content: left;
+}
+
+.gridPlaceContent_end > * {
+	display: grid;
+	align-content: end;
+	justify-content: left;
+}
+
 .grid2Col {
 	grid-template-columns: repeat( 2, calc( 50% - ( #{$grid-gap} / 2 ) ) );
 }
