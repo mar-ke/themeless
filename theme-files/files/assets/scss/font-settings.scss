@@ -1,9 +1,11 @@
 html, body {
-	font-family: Akshar, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	font-size: 18px;
+	font-family: $body-font-family;
+	font-size: $body-font-size;
 	margin: 0px;
 	font-weight: 300;
 	color: $font-color;
+	hyphens:auto;
+	-webkit-hyphens: auto;
 }
 h1, .h1 {
 	margin-top: 0px;
@@ -61,47 +63,47 @@ p + p {
 
 /* FONT COLOR */
 
-.colorWhite p, .colorWhite, .colorWhite a, a.colorWhite {
+.colorWhite *, .colorWhite, *.colorWhite {
 	color: white !important;
 }
-.colorLightgray p, .colorLightgray, .colorLightgray a, a.colorLightgray {
+.colorLightgray *, .colorLightgray, *.colorLightgray {
 	color: $lightgray-color !important;
 }
-.colorGray p, .colorGray, .colorGray a, a.colorGray {
+.colorGray *, .colorGray, *.colorGray {
 	color: #aaa !important
 }
-.colorDarkgray p, .colorDarkgray, .colorDarkgray a, a.colorDarkgray {
+.colorDarkgray *, .colorDarkgray, *.colorDarkgray {
 	color: $darkergray !important;
 }
-.colorBlack p, .colorBlack, .colorBlack a, a.colorBlack {
+.colorBlack *, .colorBlack, *.colorBlack {
 	color: black !important;
 }
-.colorMain p, .colorMain, .colorMain a, a.colorMain,
-.colorAccent p, .colorAccent, .colorAccent a, a.colorAccent {
+.colorMain *, .colorMain, *.colorMain,
+.colorAccent *, .colorAccent, *.colorAccent {
 	color: $main-color !important;
 }
-.colorSecond p, .colorSecond, .colorSecond a, a.colorSecond {
+.colorSecond *, .colorSecond, *.colorSecond {
 	color: $second-color !important;
 }
 
 /* FONT SIZE */
 
-.fontSizeS p, .fontSizeS {
+.fontSizeS *, .fontSizeS {
 	font-size: .8rem !important
 }
-.fontSizeM p, .fontSizeM {
+.fontSizeM *, .fontSizeM {
 	font-size: 1.5rem !important;
 }
-.fontSizeL p, .fontSizeL {
+.fontSizeL *, .fontSizeL {
 	font-size: 2rem !important;
 }
-.fontSizeXL p, .fontSizeXL {
+.fontSizeXL *, .fontSizeXL {
 	font-size: 2.5rem !important;
 }
-.fontSizeXXL p, .fontSizeXXL {
+.fontSizeXXL *, .fontSizeXXL {
 	font-size: 4rem !important;
 }
-.fontSizeXXXL p, .fontSizeXXXL {
+.fontSizeXXXL *, .fontSizeXXXL {
 	font-size: 6rem !important;
 }
 
@@ -132,10 +134,12 @@ p + p {
 a {
 	text-decoration: none;
 	color: $main-color;
+	transition-duration: $transition-duration;
 } 
 
 a:hover {
 	color: $second-color;
+	transition-duration: $transition-duration;
 }
 
 /* TEXT ALIGN */
