@@ -1,0 +1,27 @@
+/* files/themore/assets/scss/elements/border.scss */
+	
+/* [start] border classes  */
+
+	.borderColorWhite {
+		border-color: white !important;
+	}
+	.borderColorLightgray {
+		border-color: $lightgray-color !important;
+	}
+	.borderColorGray {
+		border-color: $gray-color !important;
+	}
+	.borderColorDarkgray {
+		border-color: $darkergray-color !important;
+	}
+	.borderColorBlack {
+		border-color: black !important;
+	}
+	.borderColorMain, .borderColorAccent {
+		border-color: $main-color !important;
+	}
+	.borderColorSecond {
+		border-color: $second-color !important;
+	}
+	
+/* [end] border classes  */

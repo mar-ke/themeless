@@ -1,3 +1,5 @@
+// JSHELPER v1.0
+
 // Get All jshelper-Classes
 var helpObjects = document.querySelectorAll("[class*=jsh_]");
 

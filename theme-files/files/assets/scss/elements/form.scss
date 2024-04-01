@@ -1,0 +1,114 @@
+/* files/themore/assets/scss/elements/form.scss */
+
+/* [start] froms general */
+
+	.invisible {
+		display:none;
+	}
+	
+	.widget-text label,
+	.widget-password label,
+	.widget-select label,
+	.widget-textarea label, 
+	.widget-range label {
+	  display: block;
+	  padding-left: 15px;
+	  font-size: .9em;
+	  margin-bottom: 5px;
+	}
+	
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="range"],
+	input[type="url"],
+	select,
+	textarea {
+	  width: 100%;
+	  font-size: 1em;
+	  padding: 10px 15px;
+	  border-radius: 5px;
+	  border: 1px solid #ccc;
+	  background-color:white;
+	  margin-bottom: 10px;
+	}
+	
+	fieldset {
+		margin-bottom: 10px;
+	}
+	
+	.grid > .widget > input,
+	.grid > select,
+	.grid > textarea {
+	  margin-bottom: unset;
+	}
+	
+	button[type="submit"],
+	.mod_two_factor .submit_container a {
+		background-color: $main-color;
+		color: white;
+		padding: 10px 20px;
+		font-weight: bold;
+		border: unset;
+		border-radius: 50px;
+		cursor: pointer;
+		font-size: .8em;
+		letter-spacing: 1px;
+		margin-top:20px;
+	}
+
+/* [end] froms general */
+
+/* [start] form style_1 */
+
+	.ce_form .style_1 {
+		background-color: white;
+		border: 1px solid #ddd;
+		padding: 40px 25px;
+		box-shadow: 0 0 15px #0001;
+		border-radius: 10px;
+		max-width:90%;
+		margin:auto;
+	}
+
+/* [end] form style_1 */
+
+/* [start] user forms */
+
+	.mod_login .widget-submit, 
+	.mod_lostPassword .widget-submit {
+		text-align: center;
+		margin-top: 10px;
+	}
+	
+	.mod_lostPassword > :is(h1, h2, h3, h4, h5, h6),
+	.mod_login > :is(h1, h2, h3, h4, h5, h6) {
+		text-align:center;
+	}
+	
+	/* [start] login style_1 */
+	
+		.mod_login.style_1 {
+		  background-color: $lightgray-color;
+		  border: 1px solid #ddd;
+		  padding: 50px 25px;
+		}
+		
+		.mod_login.style_1 form {
+			max-width: 400px;
+			margin: auto;
+		}
+	
+	/* [end] end style_1 */
+	
+	/* [start] two factor */
+	
+		.mod_two_factor {
+			border: 1px solid #ddd;
+			padding: 20px;
+		}
+
+	/* [end] two factor */
+
+/* [end] user forms  */

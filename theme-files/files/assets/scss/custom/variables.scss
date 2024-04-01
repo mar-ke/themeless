@@ -1,0 +1,95 @@
+// BASIC SETTINGS
+$grid-gap: 30px;
+$container-size: 1200px;
+$width-tablet: 1000px;
+$width-smartphone: 800px;
+$transition-duration: .3s;
+
+// COLOR
+$main-color: #42BCCF;
+$second-color: black;
+$lightgray-color: #f4f4f4;
+$gray-color: #ccc;
+$darkergray-color: #999;
+$font-color: #111;
+
+// COLOR » HEADER
+$menu-color: #333;
+$menu-color-active: $main-color;
+$menu-bordercolor: #0003;
+$menu-shadow: #0000;
+$menu-font-weight: 400;
+$mobile-bottom-background: #f4f4f4;
+$mobile-menu-color: $menu-color;
+$mobile-menu-color-selected: $main-color;
+$mobile-menu-background-color: #f4f4f4;
+
+$header-background: #fff;
+
+// COLOR » FOOTER
+$footer-color: #efefef;
+
+
+// BORDER RADIUS
+$border-radius-xs: 5px;
+$border-radius-s: 10px;
+$border-radius-m: 20px;
+$border-radius-l: 30px;
+$border-radius-xl: 100%;
+
+// FLOATING BUTTONS
+$FB-border-radius: $border-radius-m;
+$FB-bg: #000a;
+$FB-color:white;
+$FB-bg-hover: $main-color;
+$FB-color-hover: white;
+
+
+// FONT
+$body-font-family: 'Outfit', 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+$body-font-size: 18px;
+$body-hyphens: auto;
+$h1-size: 3em;
+$h1-color: $font-color;
+$h2-size: 1.75em;
+$h2-color: $font-color;
+$h3-size: 1.5em;
+$h3-color: $font-color;
+$h4-size: 1.25em;
+$h4-color: $font-color;
+$h5-size: 1.1em;
+$h5-color: $font-color;
+$h6-size: 1em;
+$h6-color: $font-color;
+$hl-hyphens: none;
+
+// HEADER
+$header-overlapping: false; // true
+$header-fixed-top: true; // true
+$header-fixed-bottom: false; // false | overwrites $header-fixed-top
+
+// HEADER » LOGO
+$logo-width: 150px;
+$logo-padding: 20px 0px;
+$logo-nav-inline: true; // true
+
+// HEADER » NAVIGATION
+$nav-last-element-button: true; // true
+$nav-centered: false; // false
+$nav-max-width: false; // false
+$nav-separator: '•'; // false -> none
+$nav-font-size: calc(#{$body-font-size} * .9);
+
+// IMAGES 
+$image-link-effect: true; // true
+$gallery-link-effect: true; // true
+
+// Vars to use in CSS
+:root {
+	--container-size: #{$container-size};
+	--main-color: #{$main-color};
+	--second-color: #{$second-color};
+	--lightgray-color: #{$lightgray-color};
+	--gray-color: #{$gray-color};
+	--darkergray-color: #{$darkergray-color};
+}

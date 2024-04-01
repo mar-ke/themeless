@@ -1,0 +1,86 @@
+/* files/themore/assets/scss/elements/buttons.scss */
+	
+/* [start] buttons ( Hyperlinks )  */
+
+	.btn a, a.btn {
+		background-color: $main-color;
+		color: white;
+		padding: 15px 30px;
+		border-radius: 50px;
+		min-width: 120px;
+		display: inline-block;
+		text-align: center;
+		transition-duration: $transition-duration;
+		font-weight:100;
+	}
+	
+	.btn + .btn {
+		margin-left: 20px;
+	}
+	
+	.btn a:hover, a.btn:hover {
+		box-shadow: 5px 5px 0 #000d;
+		transition-duration: $transition-duration;
+		transform: translateY(-5px);
+	}
+	
+	div.btn {
+		display: inline-block
+	}
+	
+	.btnWhite a, a.btnWhite {
+		background-color: white;
+		color: $main-color;
+	}
+	
+	.btnGray a, a.btnGray {
+		background-color: $lightgray-color;
+		color: black!important;
+	}
+	
+	.btnSecond a, a.btnSecond {
+		background-color: $second-color;
+		color: white;
+	}
+	
+	.btnCenter {
+		text-align: center;
+		width: 100%;
+	}
+
+/* [end] buttons ( Hyperlinks )  */
+
+/* [start] floating contact buttons  */
+
+	.floatingButton:hover {
+		transition-duration: $transition-duration;
+		background-color: #A167FF;
+		color: white;
+		text-decoration: none !important;
+		rotate: 5deg;
+		scale: 1.1;
+		box-shadow: 4px 4px 10px #0003;
+		transform: translateX(5px);
+	}
+	
+	.floatingButton {
+		background-color: $FB-bg;
+		width: 50px;
+		height: 50px;
+		display: grid;
+		place-content: center;
+		border-radius: $FB-border-radius;
+		font-size: 25px;
+		color: $FB-color;
+		transition-duration: .3s;
+		margin-bottom:10px;
+	}
+	
+	.floatingButtonWrapper {
+		position: fixed;
+		right: 20px;
+		bottom: 110px;
+		z-index: 10
+	}
+
+/* [end] floating contact buttons  */

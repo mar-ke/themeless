@@ -1,0 +1,110 @@
+/* files/themore/assets/scss/elements/spacings.scss */
+	
+/* [start] margin  */
+	
+	.mt2XL, .mt2XL > .bgWrapperInner {
+		margin-top: 150px !important;
+	}
+	.mb2XL, .mb2XL > .bgWrapperInner {
+		margin-bottom: 150px !important;
+	}
+	.mtXL, .mtXL > .bgWrapperInner {
+		margin-top: 100px !important;
+	}
+	.mbXL, .mbXL > .bgWrapperInner {
+		margin-bottom: 100px !important;
+	}
+	.mtL, .mtL > .bgWrapperInner {
+		margin-top: 60px !important;
+	}
+	.mbL, .mbL > .bgWrapperInner {
+		margin-bottom: 60px !important;
+	}
+	.mtM, .mtM > .bgWrapperInner {
+		margin-top: 40px !important;
+	}
+	.mbM, .mbM > .bgWrapperInner {
+		margin-bottom: 40px !important;
+	}
+	.mtS, .mtS > .bgWrapperInner {
+		margin-top: 20px !important;
+	}
+	.mbS, .mbS > .bgWrapperInner {
+		margin-bottom: 20px !important;
+	}
+	.mtXS, .mtXS > .bgWrapperInner {
+		margin-top: 10px !important;
+	}
+	.mbXS, .mbXS > .bgWrapperInner {
+		margin-bottom: 10px !important;
+	}
+	.mt0, .mt0 > .bgWrapperInner {
+		margin-top: 0px !important;
+	}
+	.mb0, .mb0 > .bgWrapperInner {
+		margin-bottom: 0px !important;
+	}
+	.marginAuto, .marginAuto > .bgWrapperInner {
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	.mlAuto {
+		margin-left:auto;
+	}
+	
+	.mrAuto {
+		margin-right:auto;
+	}
+
+/* [end] margin  */
+
+/* [start] padding  */
+	
+	.pt2XL, .pt2XL > .bgWrapperInner {
+		padding-top: 150px !important;
+	}
+	.pb2XL, .pb2XL > .bgWrapperInner {
+		padding-bottom: 150px !important;
+	}
+	.ptXL, .ptXL > .bgWrapperInner {
+		padding-top: 100px !important;
+	}
+	.pbXL, .pbXL > .bgWrapperInner {
+		padding-bottom: 100px !important;
+	}
+	.ptL, .ptL > .bgWrapperInner {
+		padding-top: 60px !important;
+	}
+	.pbL, .pbL > .bgWrapperInner {
+		padding-bottom: 60px !important;
+	}
+	.ptM, .ptM > .bgWrapperInner {
+		padding-top: 40px !important;
+	}
+	.pbM, .pbM > .bgWrapperInner{
+		padding-bottom: 40px !important;
+	}
+	.pM, .pM > .bgWrapperInner {
+		padding: 40px !important;
+	}
+	.ptS, .ptS > .bgWrapperInner {
+		padding-top: 20px !important;
+	}
+	.pbS, .pbS > .bgWrapperInner {
+		padding-bottom: 20px !important;
+	}
+	.ptXS, .ptXS > .bgWrapperInner {
+		padding-top: 10px !important;
+	}
+	.pbXS, .pbXS > .bgWrapperInner {
+		padding-bottom: 10px !important;
+	}
+	.pt0, .pt0 > .bgWrapperInner {
+		padding-top: 0px !important;
+	}
+	.pb0, .pb0 > .bgWrapperInner {
+		padding-bottom: 0px !important
+	}
+
+/* [end] margin  */

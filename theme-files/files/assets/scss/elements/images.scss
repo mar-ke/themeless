@@ -1,0 +1,229 @@
+/* files/themore/assets/scss/elements/images.scss */
+	
+/* [start] images general */	
+
+	img {
+		max-width: 100%;
+		object-fit: contain;
+		height: auto;
+		display:block;
+	}
+	
+	figure {
+		margin: unset;
+	}
+
+/* [end] images general */	
+
+/* [start] imageborder radius classes  */
+
+	.imageBorderRadiusXS img {
+		border-radius: $border-radius-xs;
+	}
+	
+	.imageBorderRadiusS img {
+		border-radius: $border-radius-s;
+	}
+	
+	.imageBorderRadiusM img {
+		border-radius: $border-radius-m;
+	}
+	
+	.imageBorderRadiusL img {
+		border-radius: $border-radius-l;
+	}
+	
+	.imageBorderRadiusXL img {
+		border-radius: $border-radius-xl;
+	}
+	
+/* [end] imageborder radius classes  */	
+
+/* [start] floating images (in ce_text)  */
+
+	.float_left {
+		float: left;
+		margin: 0 20px 20px 0;
+	}
+	
+	.float_right {
+		float: right;
+		margin: 0 0 20px 20px;
+	}
+
+/* [end] floating images (in ce_text)  */
+
+/* [start] image-link configuration  */
+
+	@mixin imageLink {
+		position: relative;
+		width: 100%;
+		display: block;
+	}
+	
+	@mixin imageLinkOverlay {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: '';
+		position: absolute;
+		transition-duration: $transition-duration;
+	}
+	
+	@mixin imageLinkOverlayHover {
+		background-color: #0003;
+		transition-duration: $transition-duration;
+	}
+	
+	@mixin imageLinkIcon {
+		content: "\2b";
+		font-weight: 900;
+		font-family: 'Font Awesome 6 Free';
+		position: absolute;
+		top: 10%;
+		right: 10%;
+		z-index: 1;
+		transition-duration: $transition-duration;
+	}
+	
+	@mixin imageLinkIconHover {
+		scale: 2;
+		rotate: 10deg;
+		transition-duration: $transition-duration;
+	}
+	
+	/* [start] conditions: image-link */
+	
+		@if $image-link-effect == true {
+		
+			.ce_image .image_container a {
+				@include imageLink
+			}
+			
+			.ce_image .image_container a::before {
+				@include imageLinkOverlay
+			}
+			
+			.ce_image .image_container a:hover::before {
+				@include imageLinkOverlayHover
+			}
+			
+			.ce_image .image_container a::after {
+				@include imageLinkIcon
+			}
+			
+			.ce_image .image_container a:hover::after {
+				@include imageLinkIconHover
+			}
+			
+		}
+		
+	/* [end] conditions: image-link */
+	
+/* [end] image-link configuration */
+
+/* [start] gallery-link configuration */
+		
+	.ce_gallery ul {
+		padding-left: unset;
+		list-style-type: none;
+	}
+	
+	.ce_gallery > ul {
+		@extend .grid;
+	}
+	
+	.ce_gallery .cols_2 {
+		@extend .grid2Col;
+		@extend .grid1ColSmartphone;
+	}
+	
+	.ce_gallery .cols_3 {
+		@extend .grid3Col;
+		@extend .grid1ColSmartphone;
+	}
+	
+	.ce_gallery .cols_4 {
+		@extend .grid4Col;
+		@extend .grid2ColTablet;
+		@extend .grid2ColSmartphone;
+	}
+	
+	.ce_gallery .cols_5 {
+		@extend .grid5Col;
+		@extend .grid3ColTablet;
+		@extend .grid2ColSmartphone;
+	}
+	
+	.ce_gallery .cols_6 {
+		@extend .grid6Col;
+		@extend .grid3ColTablet;
+		@extend .grid2ColSmartphone;
+	}
+	
+	.ce_gallery .cols_7 {
+		@extend .grid7Col;
+		@extend .grid4ColTablet;
+		@extend .grid3ColSmartphone;
+	}
+	
+	.ce_gallery .cols_8 {
+		@extend .grid8Col;
+		@extend .grid4ColTablet;
+		@extend .grid3ColSmartphone;
+	}
+	
+	.ce_gallery .cols_9 {
+		@extend .grid9Col;
+		@extend .grid5ColTablet;
+		@extend .grid3ColSmartphone;
+	}
+	
+	.ce_gallery .cols_10 {
+		@extend .grid10Col;
+		@extend .grid5ColTablet;
+		@extend .grid3ColSmartphone;
+	}
+	
+	.ce_gallery .cols_11 {
+		@extend .grid11Col;
+		@extend .grid6ColTablet;
+		@extend .grid3ColSmartphone;
+	}
+	
+	.ce_gallery .cols_12 {
+		@extend .grid12Col;
+		@extend .grid6ColTablet;
+		@extend .grid3ColSmartphone;
+	}
+		
+	/* [start] conditions: gallery-link */
+		
+		@if $gallery-link-effect == true {
+		
+			.ce_gallery .image_container a{
+				@include imageLink
+			}
+		
+			.ce_gallery .image_container a::before {
+				@include imageLinkOverlay
+			}
+		
+			.ce_gallery .image_container a:hover::before {
+				@include imageLinkOverlayHover
+			}
+		
+			.ce_gallery .image_container a::after {
+				@include imageLinkIcon
+			}
+		
+			.ce_gallery .image_container a:hover::after {
+				@include imageLinkIconHover
+			}
+			
+		}
+
+	/* [end] conditions: gallery-link */
+	
+/* [end] gallery-link configuration */

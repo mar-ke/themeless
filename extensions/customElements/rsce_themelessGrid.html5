@@ -1,1 +1,0 @@
-<div class="grid<?php if ($this->grid): ?> <?= $this->grid; ?> <?php endif ?><?php if ($this->gridTablet): ?> <?= $this->gridTablet ?> <?php endif ?><?php if ($this->gridSmartphone): ?> <?= $this->gridSmartphone ?> <?php endif ?><?= $this->class ?> <?php if ($this->placeContent): ?>gridPlaceContent_<?= $this->placeContent; ?>"<?php endif ?> " <?= $this->cssID ?> >

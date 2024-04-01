@@ -1,0 +1,29 @@
+/* files/themore/assets/scss/elements/header.scss */
+	
+/* [start] video header  */	
+
+	.videoHeaderWrapper {
+		position:relative;
+		overflow: hidden;
+	}
+	
+	.videoHeaderWrapper .video_container {
+		height: 100%;
+	}
+	
+	.videoHeaderWrapper .ce_player {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.videoHeaderWrapper video {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	
+/* [end] video header  */	

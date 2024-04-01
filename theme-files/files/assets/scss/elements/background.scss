@@ -1,0 +1,73 @@
+/* files/themore/assets/scss/elements/background.scss */
+	
+/* [start] background classes  */	
+
+	.bgWhite {
+		background-color: white !important;
+	}
+	.bgLightgray {
+		background-color: $lightgray-color !important;
+	}
+	.bgGray {
+		background-color: $gray-color !important;
+	}
+	.bgDarkgray {
+		background-color: $darkergray-color !important;
+	}
+	.bgBlack {
+		background-color: black !important;
+	}
+	.bgMain, .bgAccent {
+		background-color: $main-color !important;
+	}
+	.bgSecond {
+		background-color: $second-color !important;
+	}
+
+/* [end] background classes  */	
+
+/* [start] BG-Wrapper classes  */	
+
+	.bgWrapperStickyContent > .bgWrapperInner {
+		position: sticky;
+		top: 120px;
+	}
+	
+	.bgWrapperInner > * {
+		z-index: 5;
+		position: relative;
+	}
+
+/* [end] BG-Wrapper classes  */
+
+/* [start] background gradient  */	
+
+	.bgGradientWhite {
+		background: linear-gradient(#ffffff4d,#0000);
+	}
+	
+	.bgGradientLightgray {
+		background: linear-gradient(#{$lightgray-color}4d,#0000);
+	}
+	
+	.bgGradientGray {
+		background: linear-gradient(#{$gray-color}4d,#0000);
+	}
+	
+	.bgGradientDarkgray {
+		background: linear-gradient(#{$darkergray-color}4d,#0000);
+	}
+	
+	.bgGradientBlack {
+		background: linear-gradient(#0000004d,#0000);
+	}
+	
+	.bgGradientAccent {
+		background: linear-gradient(#{$main-color}4d,#0000);
+	}
+	
+	.bgGradientSecond {
+		background: linear-gradient(#{second-color}4d,#0000);
+	}
+
+/* [end] background gradient  */	

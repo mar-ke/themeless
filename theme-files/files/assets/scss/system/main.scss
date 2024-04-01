@@ -1,0 +1,78 @@
+/* files/themore/assets/scss/system/main.scss */
+	
+/* [start] structure  */
+
+	.maxWidthContainerSize {
+		max-width: $container-size;
+		margin: auto!important;
+		margin-left: auto!important;
+		margin-right: auto!important;
+		padding: 50px 25px;
+	}
+	
+	.mod_article:not(.fullWidth):not(.fullWidthContent) {
+		padding: 50px 25px
+	}
+	
+	#container .mod_article:not(.fullWidth):not(.fullWidthContent), .mod_navigation ul {
+		max-width: $container-size;
+		margin: auto
+	}
+	
+	#container:has(#left) {
+		display: grid;
+		grid-template-columns: 25% auto;
+		grid-column-gap: 25px;
+		max-width: $container-size;
+		margin: auto!important;
+	}
+	
+	#container:has(#left) #main {
+	  order: 2;
+	}
+	
+	#left {
+	  order: 1;
+	  padding-top:50px;
+	}
+	
+	#left ul {
+		list-style-type:none;
+	}
+	
+/* [end] structure  */
+
+/* [start] visibility classes  */
+
+	@media screen and ( max-width: $width-smartphone) {
+		.hideOnMobile {
+			display:none!important;
+		}
+	}
+	
+	@media screen and ( min-width: $width-smartphone) and (max-width: $width-tablet) {
+		.hideOnTablet {
+			display:none!important;
+		}
+	}
+	
+	@media screen and ( min-width: $width-tablet) {
+		.hideOnDesktop {
+			display:none!important;
+		}
+	}
+	
+/* [end] visibility classes  */
+
+/* [start] other settings  */
+	
+	* { 
+		box-sizing: border-box;
+		scroll-behavior: smooth;
+	}
+	
+	.noHyphens {
+		hyphens: none;
+	}
+
+/* [end] other settings  */

@@ -1,0 +1,62 @@
+/* files/themore/assets/scss/elements/card.scss */
+
+/* [start] image Card */
+
+	.imageCard {
+		position: relative;
+		min-height: 300px;
+		display: grid;
+		align-content: flex-end;
+		transition-duration: .3s;
+		z-index: 1;
+		overflow: hidden;
+		border-radius: 10px;
+		box-shadow: 0 0 10px #0002;
+	}
+	
+	.imageCard:hover {
+		transform: translateY(-10px);
+		transition-duration: .3s;
+		box-shadow: 0 0 20px #0004;
+		border-radius: 10px;
+	}
+	
+	.imageCard:hover img {
+		transition-duration: .3s;
+		filter: blur(5px) brightness(1.05);
+	}
+	
+	.imageCard img {
+		transition-duration: .3s;
+	}
+	
+	.imageCard figure {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow: hidden;
+		z-index: -2;
+	}
+	
+	.imageCard p {
+		background-color: #ffffffe8;
+		padding: 10px;
+		border-radius: 0 0 10px 10px;
+		border-top: 2px solid $main-color;
+		box-shadow: 0 0 10px #0003;
+	}
+
+/* [end] image Card */
+
+/* [start] notice Box */
+
+	.noticeBox {
+		border: 4px #004abd dashed;
+		background-color: #e3ecff;
+		color: #004abd;
+		padding: 20px;
+	}
+
+/* [end] notice Box */

@@ -1,0 +1,219 @@
+/* files/themore/assets/scss/system/font.scss */
+	
+/* [start] fonts general  */
+
+	html, body {
+		font-family: $body-font-family;
+		font-size: $body-font-size;
+		margin: 0px;
+		font-weight: 300;
+		color: $font-color;
+		hyphens:$body-hyphens;
+		-webkit-hyphens: $body-hyphens;
+	}
+		
+	strong, .bold {
+		font-weight:800;
+	}
+	
+	.textAlignCenter {
+		text-align:center;
+	}
+	
+	.textAlignRight {
+		text-align:right;
+	}
+
+
+/* [end] fonts general  */
+
+/* [start] headlines  */
+
+	h1, .h1 {
+		margin-top: 0px;
+		color: $h1-color;
+		font-size:$h1-size;
+		line-height: 1.25;
+	}
+	
+	h2, .h2 {
+		color: $h2-color;
+		font-size: $h2-size;
+	}
+	
+	h3, .h3 {
+		color: $h3-color;
+		font-size: $h3-size;
+	}
+	
+	h4, .h4 {
+		color: $h4-color;
+		font-size: $h4-size;
+	}
+	
+	h5, .h5 {
+		color: $h5-color;
+		font-size: $h5-size;
+	}
+	
+	h6, .h6 {
+		color: $h6-color;
+		font-size: $h6-size;
+	}
+	
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+		hyphens:$hl-hyphens;
+		-webkit-hyphens: $hl-hyphens;
+	}
+
+/* [end] headlines  */
+
+/* [start] paragraph  */
+
+	p {
+		margin:unset;
+	}
+	
+	.ce_text, .content-text {
+		margin-bottom: 15px;
+	}
+	
+	p + p {
+		margin-top: 10px
+	}
+
+/* [end] paragraph  */
+
+/* [start] font color classes  */
+
+	.colorWhite *, .colorWhite, *.colorWhite {
+		color: white !important;
+	}
+	.colorLightgray *, .colorLightgray, *.colorLightgray {
+		color: $lightgray-color !important;
+	}
+	.colorGray *, .colorGray, *.colorGray {
+		color: $gray-color !important
+	}
+	.colorDarkgray *, .colorDarkgray, *.colorDarkgray {
+		color: $darkergray-color !important;
+	}
+	.colorBlack *, .colorBlack, *.colorBlack {
+		color: black !important;
+	}
+	.colorMain *, .colorMain, *.colorMain,
+	.colorAccent *, .colorAccent, *.colorAccent {
+		color: $main-color !important;
+	}
+	.colorSecond *, .colorSecond, *.colorSecond {
+		color: $second-color !important;
+	}
+	
+	.colorFont *, .colorFont, *.colorFont {
+		color: $font-color!important;
+	}
+
+/* [end] font color classes  */
+
+/* [start] font size classes  */
+
+	.fontSizeS *, .fontSizeS {
+		font-size: .8rem !important
+	}
+	.fontSizeM *, .fontSizeM {
+		font-size: 1rem !important;
+	}
+	.fontSizeL *, .fontSizeL {
+		font-size: 1.2rem !important;
+	}
+	.fontSizeXL *, .fontSizeXL {
+		font-size: 1.5rem !important;
+		font-weight: 400;
+	}
+	.fontSize2XL *, .fontSize2XL {
+		font-size: 2rem !important;
+		font-weight: 400;
+		line-height: 1.15em;
+	}
+	.fontSize3XL *, .fontSize3XL {
+		font-size: 3rem !important;
+		font-weight: 500;
+		line-height: 1.15em;
+	}
+	.fontSize4XL *, .fontSize4XL {
+		font-size: 4rem !important;
+		font-weight: 500;
+		line-height: 1.15em;
+	}
+	.fontSize5XL *, .fontSize5XL {
+		font-size: 5rem !important;
+		font-weight: 500;
+		line-height: 1.15em;
+	}
+	
+	// smartphone fix
+	@media screen and (max-width: $width-smartphone) {
+		.fontSize3XL *, .fontSize3XL {
+			font-size: 2.5rem !important;
+			font-weight: 500;
+			line-height: 1.15em;
+		}
+		.fontSize4XL *, .fontSize4XL {
+			font-size: 3rem !important;
+			font-weight: 500;
+			line-height: 1.15em;
+		}
+		.fontSize5XL *, .fontSize5XL {
+			font-size: 3.5rem !important;
+			font-weight: 500;
+			line-height: 1.15em;
+		}
+	}
+
+/* [end] font size classes  */
+
+/* [start] hyperlinks in text  */
+
+	a {
+		text-decoration: none;
+		color: $main-color;
+		transition-duration: $transition-duration;
+	} 
+	
+	a:hover {
+		color: $second-color;
+		transition-duration: $transition-duration;
+	}
+	
+	.uppercase {
+		text-transform: uppercase;
+	}
+
+/* [end] hyperlinks in text  */
+
+/* [start] font styling  */
+
+	.subline {
+		text-transform: uppercase;
+		color: $main-color;
+		letter-spacing: 2px;
+	}
+	
+	.checklist li::marker {
+		content: "\f00c";
+		font-weight: 900;
+		font-family: 'Font Awesome 6 Free';
+	}
+	
+	.checklist li {
+		padding-left:10px;
+	}
+	
+	
+	code {
+		background-color: #0002;
+		border-radius: 3px;
+		padding: 5px 10px;
+	}
+
+/* [end] font styling  */

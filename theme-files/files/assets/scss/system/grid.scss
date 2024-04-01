@@ -1,0 +1,135 @@
+/* files/themore/assets/scss/system/grid.scss */
+	
+/* [start] grid-wrapper settings  */
+
+	:root {
+		--gridFaktor: 1;
+	}
+	
+	.grid {
+		display: grid !important;
+		gap: calc(#{$grid-gap}*var(--gridFaktor)*0.6) calc(#{$grid-gap}*var(--gridFaktor)) ;
+		margin-bottom: $grid-gap;	
+	}
+	
+	.gridPlaceContent_center > * {
+		display: grid;
+		align-content: center;
+	}
+	
+	.gridPlaceContent_end > * {
+		display: grid;
+		align-content: end;
+	}
+
+/* [end] grid-wrapper settings  */
+
+/* [start] grid-classes (all sizes) */
+
+	.grid2Col {
+		grid-template-columns: repeat( 2, calc( 50% - ( #{$grid-gap}*var(--gridFaktor) / 2 ) ) );
+	}
+	.grid3Col {
+		grid-template-columns: repeat( 3, calc( 100% / 3 - ( #{$grid-gap}*var(--gridFaktor) / 3 * 2 ) ) );
+	}
+	.grid4Col {
+		grid-template-columns: repeat( 4, calc( 25% - ( #{$grid-gap}*var(--gridFaktor) / 4 * 3 ) ) );
+	}
+	.grid5Col {
+		grid-template-columns: repeat( 5, calc( 20% - ( #{$grid-gap}*var(--gridFaktor) / 5 * 4 ) ) );
+	}
+	.grid6Col {
+		grid-template-columns: repeat( 6, calc( 100% / 6 - ( #{$grid-gap}*var(--gridFaktor) / 6 * 5 ) ) );
+	}
+	.grid7Col {
+		grid-template-columns: repeat( 7, calc( 100% / 7 - ( #{$grid-gap}*var(--gridFaktor) / 7 * 6 ) ) );
+	}
+	.grid8Col {
+		grid-template-columns: repeat( 8, calc( 100% / 8 - ( #{$grid-gap}*var(--gridFaktor) / 8 * 7 ) ) );
+	}
+	.grid9Col {
+		grid-template-columns: repeat( 9, calc( 100% / 9 - ( #{$grid-gap}*var(--gridFaktor) / 9 * 8 ) ) );
+	}
+	.grid10Col {
+		grid-template-columns: repeat( 10, calc( 100% / 10 - ( #{$grid-gap}*var(--gridFaktor) / 10 * 9 ) ) );
+	}
+	.grid11Col {
+		grid-template-columns: repeat( 11, calc( 100% / 11 - ( #{$grid-gap}*var(--gridFaktor) / 11 * 10 ) ) );
+	}
+	.grid12Col {
+		grid-template-columns: repeat( 12, calc( 100% / 12 - ( #{$grid-gap}*var(--gridFaktor) / 12 * 11 ) ) );
+	}
+	.grid-66-33 {
+		grid-template-columns: calc( 100% / 3 * 2 - ( #{$grid-gap}*var(--gridFaktor) / 2 ) ) calc( 100% / 3 - ( #{$grid-gap}*var(--gridFaktor) / 2 ) );
+	}
+	.grid-33-66 {
+		grid-template-columns: calc( 100% / 3 - ( #{$grid-gap}*var(--gridFaktor) / 2 ) ) calc( 100% / 3 * 2 - ( #{$grid-gap}*var(--gridFaktor) / 2 ) );
+	}
+	
+/* [end] grid-classes (all sizes) */
+
+/* [start] grid-classes (tablet) */
+	
+	@media ( min-width: $width-smartphone ) and ( max-width: $width-tablet) {
+		
+		.grid1ColTablet {
+			grid-template-columns: 100%;
+		}
+		.grid2ColTablet {
+			grid-template-columns: repeat( 2, calc( 50% - ( #{$grid-gap}*var(--gridFaktor) / 2 ) ) );
+		}
+		.grid3ColTablet {
+			grid-template-columns: repeat( 3, calc( 100% / 3 - ( #{$grid-gap}*var(--gridFaktor) / 3 * 2 ) ) );
+		}
+		.grid4ColTablet {
+			grid-template-columns: repeat( 4, calc( 25% - ( #{$grid-gap}*var(--gridFaktor) / 4 * 3 ) ) );
+		}
+		.grid5ColTablet {
+			grid-template-columns: repeat( 5, calc( 20% - ( #{$grid-gap}*var(--gridFaktor) / 5 * 4 ) ) );
+		}
+		.grid6ColTablet {
+			grid-template-columns: repeat( 6, calc( 100% / 6 - ( #{$grid-gap}*var(--gridFaktor) / 6 * 5 ) ) );
+		}
+		.grid-66-33Tablet {
+			grid-template-columns: calc( 100% / 3 * 2 - ( #{$grid-gap}*var(--gridFaktor) / 2 ) ) calc( 100% / 3 - ( #{$grid-gap}*var(--gridFaktor) / 2 ) );
+		}
+		.grid-33-66Tablet {
+			grid-template-columns: calc( 100% / 3 - ( #{$grid-gap}*var(--gridFaktor) / 2 ) ) calc( 100% / 3 * 2 - ( #{$grid-gap}*var(--gridFaktor) / 2 ) );
+		}
+		
+	}
+	
+/* [end] grid-classes (tablet) */
+
+/* [start] grid-classes (smartphone) */
+
+	@media (max-width: $width-smartphone ) {
+
+		.grid1ColSmartphone {
+			grid-template-columns: 100%;
+		}
+		.grid2ColSmartphone {
+			grid-template-columns: repeat( 2, calc( 50% - ( #{$grid-gap}*var(--gridFaktor) / 2 ) ) );
+		}
+		.grid3ColSmartphone {
+			grid-template-columns: repeat( 3, calc( 100% / 3 - ( #{$grid-gap}*var(--gridFaktor) / 3 * 2 ) ) );
+		}
+		.grid4ColSmartphone {
+			grid-template-columns: repeat( 4, calc( 25% - ( #{$grid-gap}*var(--gridFaktor) / 4 * 3 ) ) );
+		}
+		.grid5ColSmartphone {
+			grid-template-columns: repeat( 5, calc( 20% - ( #{$grid-gap}*var(--gridFaktor) / 5 * 4 ) ) );
+		}
+		.grid6ColSmartphone {
+			grid-template-columns: repeat( 6, calc( 100% / 6 - ( #{$grid-gap}*var(--gridFaktor) / 6 * 5 ) ) );
+		}
+		.grid-66-33-Smartphone {
+			grid-template-columns: calc( 100% / 3 * 2 - ( #{$grid-gap}*var(--gridFaktor) / 2 ) ) calc( 100% / 3 - ( #{$grid-gap}*var(--gridFaktor) / 2 ) );
+		}
+		.grid-33-66-Smartphone {
+			grid-template-columns: calc( 100% / 3 - ( #{$grid-gap}*var(--gridFaktor) / 2 ) ) calc( 100% / 3 * 2 - ( #{$grid-gap}*var(--gridFaktor) / 2 ) );
+		}
+	
+	}
+	
+/* [end] grid-classes (smartphone) */
